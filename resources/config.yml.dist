@@ -1,0 +1,2 @@
+# adjust this file and pass it's path to discoverer configuration object
+basePath: /home/user/.mozilla/firefox

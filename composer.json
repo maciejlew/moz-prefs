@@ -1,0 +1,26 @@
+{
+  "name": "lionnet/moz-prefs",
+  "type": "library",
+  "description": "MOZ prefs utilities",
+  "keywords": ["browsers"],
+  "homepage": "https://github.com/maciejlew/moz-prefs",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1",
+    "symfony/yaml": "^4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6",
+    "mikey179/vfsStream": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "LionNet\\MozPrefs\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LionNet\\MozPrefs\\Tests\\": "tests/"
+    }
+  }
+}
