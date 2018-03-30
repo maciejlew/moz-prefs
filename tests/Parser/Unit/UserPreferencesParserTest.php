@@ -60,5 +60,4 @@ class UserPreferencesParserTest extends TestCase
         $this->assert->assert('pref1', 'true', $userPreferences[0]);
         $this->assert->assert('pref2', 'false', $userPreferences[1]);
     }
-
 }

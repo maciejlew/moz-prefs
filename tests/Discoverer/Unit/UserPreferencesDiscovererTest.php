@@ -38,5 +38,4 @@ class UserPreferencesDiscovererTest extends TestCase
             $this->assertEquals('prefs.js', $userPreferenceFile->getFilename());
         }
     }
-
 }

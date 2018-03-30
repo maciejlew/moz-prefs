@@ -15,5 +15,4 @@ class UserPreferenceAssert extends Assert
         $this->assertEquals($expectedName, $userPreference->name);
         $this->assertEquals($expectedValue, $userPreference->value);
     }
-
 }

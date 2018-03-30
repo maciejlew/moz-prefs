@@ -20,5 +20,4 @@ class BasePathConfigStub implements BasePathConfig
     {
         return $this->basePath;
     }
-
 }
