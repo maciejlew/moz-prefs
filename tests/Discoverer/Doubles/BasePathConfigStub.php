@@ -6,20 +6,16 @@ namespace LionNet\MozPrefs\Tests\Discoverer\Doubles;
 
 use LionNet\MozPrefs\Discoverer\Config\BasePathConfig;
 
-class BasePathConfigMock extends BasePathConfig
+class BasePathConfigStub implements BasePathConfig
 {
 
-    /** @var string */
-    public $basePath;
+    private $basePath;
 
-    /**
-     * Intentional overwrite
-     */
-    public function __construct(string $configFilePath) {}
+    public function __construct(string $basePath)
+    {
+        $this->basePath = $basePath;
+    }
 
-    /**
-     * @return string
-     */
     public function getBasePath(): string
     {
         return $this->basePath;

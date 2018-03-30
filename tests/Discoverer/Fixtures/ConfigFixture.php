@@ -4,21 +4,18 @@ declare(strict_types=1);
 
 namespace LionNet\MozPrefs\Tests\Discoverer\Fixtures;
 
-use LionNet\MozPrefs\Discoverer\Config\BasePathConfig;
-use LionNet\MozPrefs\Tests\Discoverer\Doubles\BasePathConfigMock;
+use LionNet\MozPrefs\Tests\Discoverer\Doubles\BasePathConfigStub;
 
 class ConfigFixture
 {
 
     /**
      * @param string $basePath
-     * @return BasePathConfig
+     * @return BasePathConfigStub
      */
-    public static function createBasePathConfig(string $basePath): BasePathConfig
+    public static function createBasePathConfig(string $basePath): BasePathConfigStub
     {
-        $config = new BasePathConfigMock('any');
-        $config->basePath = $basePath;
-        return $config;
+        return new BasePathConfigStub($basePath);
     }
 
 }
