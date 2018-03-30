@@ -14,5 +14,4 @@ class InvalidBasePathException extends ConfigurationException
     {
         return new self('Invalid base path. See resources/config.yml file.');
     }
-
 }

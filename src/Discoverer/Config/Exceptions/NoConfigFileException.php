@@ -14,5 +14,4 @@ class NoConfigFileException extends ConfigurationException
     {
         return new self('Config file not readable. See resources/config.yml.dist file.');
     }
-
 }

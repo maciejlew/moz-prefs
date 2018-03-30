@@ -22,5 +22,4 @@ class UserPreference
         $this->name = $name;
         $this->value = $value;
     }
-
 }

@@ -28,5 +28,4 @@ class UserPreferencesFileIterator extends FilterIterator
     {
         return $this->getInnerIterator()->current();
     }
-
 }

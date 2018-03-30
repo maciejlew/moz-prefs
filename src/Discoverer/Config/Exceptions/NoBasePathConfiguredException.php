@@ -14,5 +14,4 @@ class NoBasePathConfiguredException extends ConfigurationException
     {
         return new self('Base path not set. See resources/config.yml.dist file.');
     }
-
 }

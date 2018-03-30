@@ -34,5 +34,4 @@ class UserPreferencesParser
     {
         return new UserPreference($match[1], $match[2]);
     }
-
 }

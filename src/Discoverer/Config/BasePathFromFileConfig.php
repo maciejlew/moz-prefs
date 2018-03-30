@@ -40,5 +40,4 @@ class BasePathFromFileConfig implements BasePathConfig
         }
         return $this->config['basePath'];
     }
-
 }

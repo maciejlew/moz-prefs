@@ -36,5 +36,4 @@ class UserPreferencesDiscoverer
         $iterator = new UserPreferencesFileIterator($iterator);
         return iterator_to_array($iterator);
     }
-
 }
