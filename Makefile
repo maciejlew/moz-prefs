@@ -1,3 +1,5 @@
+include Makefile.php8
+
 .PHONY: help
 
 help:
@@ -8,7 +10,7 @@ help:
 .DEFAULT_GOAL := help
 
 prepare: ## load dependencies
-	docker-compose run -T php /usr/bin/composer install
+	docker-compose run -T php /usr/bin/composer update
 
 test: prepare ## run test
 	docker-compose run -T php php vendor/bin/phpunit --configuration phpunit.xml
